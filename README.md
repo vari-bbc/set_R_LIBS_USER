@@ -8,7 +8,7 @@ There is an "old" cluster and a "new" cluster. The old and new clusters share th
 
 ## Usage
 
-For this script to work, you need to make sure that your personal R library directories are named as the script expects. The path for personal R libraries are commonly this path:
+For this script to work, you need to make sure that your personal R library directories are named as the script expects. The current version of R is 4.2.X. Personal R libraries for version 4.2.X are commonly in this path:
 
 `~/R/x86_64-pc-linux-gnu-library/4.2`
 
