@@ -24,7 +24,7 @@ while true ; do
 done
 
 case "$majorK" in
-    $majorversion)
+    "$majorversion")
         if [[ $verbose == 1 ]]; then
             echo "setting R_LIBS_USER for new cluster";
         fi
