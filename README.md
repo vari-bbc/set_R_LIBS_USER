@@ -27,4 +27,7 @@ You can also add that line to your .bashrc or, preferably, your .bash_profile fi
 Note: simply running the script *does not* set the R_LIBS_USER environment variable.
 You need to "source" it as above -- using the `. ` before the script.
 
-The script has one option, `-v`. If you call the script with `-v` it prints a short message to STDOUT about which way $R_LIBS_USER is being set. In practice, it is recommeded to not use the `-v` option unless necessary.
+The script has two options
+  + `-v` Print a short message to STDOUT about which way $R_LIBS_USER is being set. In practice, it is recommeded to not use the `-v` option unless necessary.
+  + `-m` Specify the major release version to call "new". All others will be considered "old". Default is 5 (e.g. if you don't use `-m`, the default "new" version is 5).
+  
