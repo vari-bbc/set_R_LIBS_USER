@@ -1,13 +1,14 @@
 #!/bin/bash
 
 #TEMP=`getopt -o he:E: -- "$@"`
-TEMP=`getopt -o v -- "$@"`
+#TEMP=`getopt -o v -- "$@"`
+TEMP=$(getopt -o v -- "$@")
 
 verbose=0
 
-krelease=`uname -r`
+krelease=$(uname -r)
 
-majorK=`echo $krelease | cut -d '.' -f 1`
+majorK=$(echo $krelease | cut -d '.' -f 1)
 
 eval set -- "$TEMP"
 while true ; do
